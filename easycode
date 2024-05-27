@@ -1,0 +1,13 @@
+def find_even_numbers(numbers):
+    even_numbers = [num for num in numbers if num % 2 == 0]
+    return even_numbers
+
+n = int(input("Введите количество чисел в списке: "))
+
+numbers = []
+for i in range(n):
+    num = int(input(f"Введите число {i+1}: "))
+    numbers.append(num)
+
+even_numbers = find_even_numbers(numbers)
+print("Четные числа в списке:", even_numbers)
